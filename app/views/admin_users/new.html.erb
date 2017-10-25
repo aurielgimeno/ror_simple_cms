@@ -1,0 +1,11 @@
+<% @page_title = 'Create admin user' %>
+
+<%= link_to("Back to menu", admin_users_path) %>
+
+<h1>New Admin User</h1>
+<%= form_for(@admin_user) do |f| %>
+	<%= render(:partial => 'form', :locals => {:f => f}) %>
+	<div class="form-buttons">
+		<%= f.submit("Create Admin User") %>
+	</div>
+<% end %>

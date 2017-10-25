@@ -1,0 +1,31 @@
+<% @page_title = 'Admin Users' %>
+
+<%= link_to("Main menu", admin_path) %>
+
+<h4>Admin Users</h4>
+
+<%= link_to("Create Admin User", new_admin_user_path) %>
+<p>
+	<%= pluralize(@admin_users.size, 'admin user') %> found	
+</p>
+<table>
+	<tr>
+		<th>Username</th>
+		<th>Name</th>
+		<th>email</th>
+		<th>Action</th>
+	</tr>
+
+	<% @admin_users.each do |user| %>
+	<tr>
+		<td><%= user.username %></td>
+		<td><%= user.name %></td>
+		<td><%= mail_to(user.email) %></td>
+		<td>
+			<!-- <%= link_to("View", admin_user_path(user)) %> | -->
+			<%= link_to("Edit", edit_admin_user_path(user)) %> |
+			<%= link_to("Delete", delete_admin_user_path(user)) %>
+		</td>
+	</tr>
+	<% end %>
+</table>

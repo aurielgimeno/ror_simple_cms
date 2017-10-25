@@ -1,0 +1,27 @@
+          Prefix Verb URI Pattern                 Controller#Action
+  subjects_index GET  /subjects/index(.:format)   subjects#index
+   subjects_show GET  /subjects/show(.:format)    subjects#show
+    subjects_new GET  /subjects/new(.:format)     subjects#new
+   subjects_edit GET  /subjects/edit(.:format)    subjects#edit
+ subjects_delete GET  /subjects/delete(.:format)  subjects#delete
+ dashboard_index GET  /dashboard/index(.:format)  dashboard#index
+  dashboard_show GET  /dashboard/show(.:format)   dashboard#show
+       dashboard GET  /dashboard(.:format)        dashboard#index
+            root GET  /                           demo#index
+      demo_index GET  /demo/index(.:format)       demo#index
+      demo_hello GET  /demo/hello(.:format)       demo#hello
+demo_other_hello GET  /demo/other_hello(.:format) demo#other_hello
+          Prefix Verb   URI Pattern                    Controller#Action
+            root GET    /                              demo#index
+  delete_subject GET    /subjects/:id/delete(.:format) subjects#delete
+        subjects GET    /subjects(.:format)            subjects#index
+                 POST   /subjects(.:format)            subjects#create
+     new_subject GET    /subjects/new(.:format)        subjects#new
+    edit_subject GET    /subjects/:id/edit(.:format)   subjects#edit
+         subject GET    /subjects/:id(.:format)        subjects#show
+                 PATCH  /subjects/:id(.:format)        subjects#update
+                 PUT    /subjects/:id(.:format)        subjects#update
+                 DELETE /subjects/:id(.:format)        subjects#destroy
+      demo_index GET    /demo/index(.:format)          demo#index
+      demo_hello GET    /demo/hello(.:format)          demo#hello
+demo_other_hello GET    /demo/other_hello(.:format)    demo#other_hello

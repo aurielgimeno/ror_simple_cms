@@ -1,0 +1,32 @@
+<%= link_to("<< Back to pages", pages_path(:subject_id => @page.subject_id)) %>
+<h1>Sections</h1>
+
+<%= link_to("Add new section", new_section_path(:page_id => @page.id)) %>
+<table>
+	<tr>
+		<td>#(position)</td>
+		<td>Page Id</td>
+		<td>Name</td>
+		<td>Visible</td>
+		<td>Content type</td>
+		<td>Content</td>
+		<td>Action</td>
+	</tr>
+
+	<% @sections.each do |section| %>
+	<tr>
+		<td><%= section.position %></td>
+		<td><%= section.page.id %></td>
+		<td><%= section.name %></td>
+		<td><%= status_tag(section.visible) %></td>
+		<td><%= section.content_type %></td>
+		<td><%= section.content %></td>
+
+		<td>
+			<%= link_to("Show", section_path(section, :page_id => @page.id))%>
+			<%= link_to("Edit", edit_section_path(section, :page_id => @page.id))%>
+			<%= link_to("Delete", delete_section_path(section, :page_id => @page.id))%>
+		</td>
+	</tr>
+	<% end %>
+</table>

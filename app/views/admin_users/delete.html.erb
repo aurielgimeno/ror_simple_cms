@@ -1,0 +1,12 @@
+<%= link_to("Back to menu", admin_users_path) %>
+
+<h1>Delete Admin User</h1>
+<%= form_for(@admin_user, :method => 'delete') do |f| %>
+	<div>
+		<p>Are you sure you want to delete item?</p>
+		<p>Admin User: <%= @admin_user.name %></p>
+	</div>
+	<div class="form-buttons">
+		<%= f.submit("Delete Admin User") %>
+	</div>
+<% end %>

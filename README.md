@@ -1,2 +1,2 @@
-# ror_simple_cms
+# ROR - simple cms
 A simple cms made of Ruby on Rails

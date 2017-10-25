@@ -1,0 +1,9 @@
+<%= link_to("Back to menu", admin_users_path) %>
+
+<h1>Edit Page</h1>
+<%= form_for(@admin_user, :method => 'patch') do |f| %>
+	<%= render(:partial => 'form', :locals => {:f => f}) %>
+	<div class="form-buttons">
+		<%= f.submit("Update Admin User") %>
+	</div>
+<% end %>

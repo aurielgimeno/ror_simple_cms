@@ -1,0 +1,26 @@
+<%= error_messages_for(f.object) %>
+
+<table>
+	<tr>
+		<td>Name</td>
+		<td><%= f.text_field(:name) %></td>
+	</tr>
+	<tr>
+		<td>Subject</td>
+		<td>
+			<%= f.object.subject.name %>
+		</td>
+	</tr>
+	<tr>
+		<td>Permalink</td>
+		<td><%= f.text_field(:permalink) %></td>
+	</tr>
+	<tr>
+		<td>Position</td>
+		<td><%= f.select(:position, 1..@page_count) %></td>
+	</tr>
+	<tr>
+		<td>Visible</td>
+		<td><%= f.check_box(:visible) %></td>
+	</tr>
+</table>

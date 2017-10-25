@@ -1,0 +1,29 @@
+<%= link_to("Back to list", pages_path(:subject_id => @subject.id), :class => 'back-link') %>
+
+<h1>Show Page</h1>
+<table>
+	<tr>
+		<td>Name</td>
+		<td><%= @page.name %></td>
+	</tr>
+	<tr>
+		<td>Subject id</td>
+		<td><%= @page.subject_id %></td>
+	</tr>
+	<tr>
+		<td>Permalink</td>
+		<td><%= @page.permalink %></td>
+	</tr>
+	<tr>
+		<td>Visible</td>
+		<td><%= @page.visible ? 'Yes' : 'No' %></td>
+	</tr>
+	<tr>
+		<td>Created</td>
+		<td><%= @page.created_at %></td>
+	</tr>
+	<tr>
+		<td>Updated</td>
+		<td><%= @page.updated_at %></td>
+	</tr>
+</table>

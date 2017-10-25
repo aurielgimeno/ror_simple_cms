@@ -1,0 +1,1690 @@
+Started GET "/subjects/new" for 127.0.0.1 at 2017-03-18 20:15:25 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (164.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by SubjectsController#new as HTML
+  [1m[35m (57.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `subjects`[0m
+  Rendering subjects/new.html.erb within layouts/admin
+  Rendered application/_error_messages.html.erb (1.3ms)
+  Rendered subjects/_form.html.erb (188.2ms)
+  Rendered subjects/new.html.erb within layouts/admin (236.9ms)
+Completed 200 OK in 1652ms (Views: 1374.2ms | ActiveRecord: 153.7ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2017-03-18 20:19:38 +0800
+Started GET "/subjects/" for 127.0.0.1 at 2017-03-18 20:19:48 +0800
+Processing by SubjectsController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `subjects`[0m
+  Rendering subjects/new.html.erb within layouts/admin
+  Rendered application/_error_messages.html.erb (0.9ms)
+  Rendered subjects/_form.html.erb (8.3ms)
+  Rendered subjects/new.html.erb within layouts/admin (14.5ms)
+Completed 200 OK in 58ms (Views: 34.6ms | ActiveRecord: 0.5ms)
+
+
+Processing by SubjectsController#index as HTML
+**** Testing Logger. ****
+  Rendering subjects/index.html.erb within layouts/admin
+  [1m[36mSubject Load (2.3ms)[0m  [1m[34mSELECT `subjects`.* FROM `subjects` ORDER BY position ASC[0m
+  [1m[35m (21.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 12[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 11[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 5[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 2[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 3[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 4[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 7[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 8[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 9[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `pages` WHERE `pages`.`subject_id` = 10[0m
+  Rendered subjects/index.html.erb within layouts/admin (258.3ms)
+Completed 200 OK in 298ms (Views: 177.0ms | ActiveRecord: 95.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-18 21:33:24 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (38.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by AccessController#menu as HTML
+  Rendering access/menu.html.erb within layouts/application
+  Rendered access/menu.html.erb within layouts/application (7051.5ms)
+Completed 500 Internal Server Error in 7667ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `linkt_to' for #<#<Class:0xb34bac7c>:0xb34ba36c>
+Did you mean?  link_to):
+    4: 	<div class="identity">Logged in as:</div>
+    5: 
+    6: 	<ul>
+    7: 		<li><%= linkt_to("Manage Subjects", subjects_path) %></li>
+    8: 		<li><%= linkt_to("Manage Pages", pages_path) %></li>
+    9: 		<li><%= linkt_to("Manage Sections", sections_path) %></li>
+   10: 		<li><%= linkt_to("Manage Admin Users", "#") %></li>
+  
+app/views/access/menu.html.erb:7:in `_app_views_access_menu_html_erb__152049375__643442578'
+  Rendering /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (216.5ms)
+  Rendering /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendering /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (292.6ms)
+Started GET "/admin" for 127.0.0.1 at 2017-03-18 21:35:07 +0800
+Processing by AccessController#menu as HTML
+  Rendering access/menu.html.erb within layouts/application
+  Rendered access/menu.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1559ms (Views: 1557.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-03-18 21:35:41 +0800
+Processing by AccessController#menu as HTML
+  Rendering access/menu.html.erb within layouts/admin
+  Rendered access/menu.html.erb within layouts/admin (3.1ms)
+Completed 200 OK in 209ms (Views: 206.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2017-03-18 21:36:00 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/admin/login"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered collection of /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [38 times] (759.4ms)
+  Rendered /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (33.7ms)
+  Rendering /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/dev8/.rvm/gems/ruby-2.3.1@simple_cms2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (913.8ms)
+  
+ActionController::RoutingError (No route matches [GET] "/admin/login"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0xa62b45c>:0xa629f1c>):
+    1: <% @page_title = "Admin Login" %>
+    2: <div class="login">
+    3: 	<%= form_tag(access_attempt_login_path, :method => post) do %>
+    4: 		<table>
+    5: 			<tr>
+    6: 				<td><%= label_tag(:username) %></td>
+  
+app/views/access/login.html.erb:3:in `_app_views_access_login_html_erb___69072738_87146910'
+  
+AbstractController::ActionNotFound (The action 'attempt_login' could not be found for AccessController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (uninitialized constant AdminUserController):
+  
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+SyntaxError (/home/dev8/Sites/simple_cms/app/views/admin_users/new.html.erb:6: syntax error, unexpected =>, expecting keyword_end
+...rm_for(@admin_user), :method => 'patch') do |f| @output_buff...
+...                               ^
+/home/dev8/Sites/simple_cms/app/views/admin_users/new.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+...dmin_user), :method => 'patch') do |f| @output_buffer.safe_a...
+...                               ^
+/home/dev8/Sites/simple_cms/app/views/admin_users/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/admin_users/new.html.erb:6: syntax error, unexpected =>, expecting keyword_end
+app/views/admin_users/new.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+app/views/admin_users/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+  
+ActionView::Template::Error (undefined method `label_tag' for #<ActionView::Helpers::FormBuilder:0xb31e0768>
+Did you mean?  label):
+    2: 
+    3: <table>
+    4: 	<tr>
+    5: 		<td><%= f.label_tag(:first_name) %></td>
+    6: 		<td><%= f.text_field(:first_name) %></td>
+    7: 	</tr>
+    8: 	<tr>
+  
+app/views/admin_users/_form.html.erb:5:in `_app_views_admin_users__form_html_erb___343056329__624992738'
+app/views/admin_users/new.html.erb:7:in `block in _app_views_admin_users_new_html_erb__439691196__624988318'
+app/views/admin_users/new.html.erb:6:in `_app_views_admin_users_new_html_erb__439691196__624988318'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for AdminUsersController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AdminUsersController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AdminUsersController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+NoMethodError (undefined method `admin_users_path_url' for #<AdminUsersController:0xb324819c>
+Did you mean?  admin_users_path
+               admin_users_url
+               admin_user_path):
+  
+app/controllers/admin_users_controller.rb:18:in `create'
+  
+ActionView::Template::Error (undefined method `admin_user_edit_path' for #<#<Class:0xb2cc0670>:0xb0eebce4>
+Did you mean?  admin_user_path
+               admin_users_path):
+    14: 		<td><%= user.name %></td>
+    15: 		<td>
+    16: 			<%= link_to("View", admin_user_path(user)) %> |
+    17: 			<%= link_to("Edit", admin_user_edit_path(user)) %> |
+    18: 			<%= link_to("Delete", admin_user_delete_path(user)) %>
+    19: 		</td>
+    20: 	</tr>
+  
+app/views/admin_users/index.html.erb:17:in `block in _app_views_admin_users_index_html_erb__1008314322__647625348'
+app/views/admin_users/index.html.erb:12:in `_app_views_admin_users_index_html_erb__1008314322__647625348'
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= link_to("Back to menu", admin_users_path) %>
+    2: 
+    3: <h1>Edit Page</h1>
+    4: <%= form_for(@page, :method => 'patch') do |f| %>
+    5: 	<%= render(:partial => 'form', :locals => {:f => f}) %>
+    6: 	<div class="form-buttons">
+    7: 		<%= f.submit("Update Admin User") %>
+  
+app/views/admin_users/edit.html.erb:4:in `_app_views_admin_users_edit_html_erb__394599719__642131008'
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= link_to("Back to menu", admin_users_path) %>
+    2: 
+    3: <h1>Edit Page</h1>
+    4: <%= form_for(@admin_user, :method => 'patch') do |f| %>
+    5: 	<%= render(:partial => 'form', :locals => {:f => f}) %>
+    6: 	<div class="form-buttons">
+    7: 		<%= f.submit("Update Admin User") %>
+  
+app/views/admin_users/edit.html.erb:4:in `_app_views_admin_users_edit_html_erb__394599719__634450618'
+DEPRECATION WARNING: Method update is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.2/classes/ActionController/Parameters.html (called from update at /home/dev8/Sites/simple_cms/app/controllers/admin_users_controller.rb:31)
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/admin_users_controller.rb:31:in `update'
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AdminUsersController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionView::Template::Error (undefined local variable or method `menu_path' for #<#<Class:0xb3048428>:0xb3047320>):
+    1: <% @page_title = 'Admin Users' %>
+    2: 
+    3: <%= link_to("Main menu", menu_path) %>
+    4: 
+    5: <h4>Admin Users</h4>
+    6: 
+  
+app/views/admin_users/index.html.erb:3:in `_app_views_admin_users_index_html_erb__1008314322__645774268'
+  
+ActionController::RoutingError (No route matches [GET] "/access"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/menu"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( public.css )` to `config/initializers/assets.rb` and restart your server):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= @page_title || "Public Area" %></title>
+    5:     <%= stylesheet_link_tag('public', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__766445496__670393538'
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( public.css )` to `config/initializers/assets.rb` and restart your server):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= @page_title || "Public Area" %></title>
+    5:     <%= stylesheet_link_tag('public', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__766445496__663717808'
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( public.css )` to `config/initializers/assets.rb` and restart your server):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= @page_title || "Public Area" %></title>
+    5:     <%= stylesheet_link_tag('public', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__766445496__634952298'
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( public.css )` to `config/initializers/assets.rb` and restart your server):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= @page_title || "Public Area" %></title>
+    5:     <%= stylesheet_link_tag('public', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__766445496__635041428'
+  
+ActionController::RoutingError (No route matches [GET] "/second"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/permalink/second"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/show/second"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass
+Did you mean?  tap):
+     7: 	</tr>
+     8: 	<tr>
+     9: 		<th>Page</th>
+    10: 		<td><%= f.select(:page_id, @pages.map {|p| [p.name, p.id] }) %></td>
+    11: 	</tr>
+    12: 	<tr>
+    13: 		<td>Position</td>
+  
+app/views/sections/_form.html.erb:10:in `_app_views_sections__form_html_erb__846122531__657968048'
+app/views/sections/edit.html.erb:8:in `block in _app_views_sections_edit_html_erb___718458041__655955378'
+app/views/sections/edit.html.erb:6:in `_app_views_sections_edit_html_erb___718458041__655955378'
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass
+Did you mean?  tap):
+     7: 	</tr>
+     8: 	<tr>
+     9: 		<th>Page</th>
+    10: 		<td><%= f.select(:page_id, @pages.map {|p| [p.name, p.id] }) %></td>
+    11: 	</tr>
+    12: 	<tr>
+    13: 		<td>Position</td>
+  
+app/views/sections/_form.html.erb:10:in `_app_views_sections__form_html_erb__846122531__645326358'
+app/views/sections/edit.html.erb:8:in `block in _app_views_sections_edit_html_erb___718458041__645311388'
+app/views/sections/edit.html.erb:6:in `_app_views_sections_edit_html_erb___718458041__645311388'
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass
+Did you mean?  tap):
+     7: 	</tr>
+     8: 	<tr>
+     9: 		<th>Page</th>
+    10: 		<td><%= f.select(:page_id, @pages.map {|p| [p.name, p.id] }) %></td>
+    11: 	</tr>
+    12: 	<tr>
+    13: 		<td>Position</td>
+  
+app/views/sections/_form.html.erb:10:in `_app_views_sections__form_html_erb__846122531__663640598'
+app/views/sections/edit.html.erb:8:in `block in _app_views_sections_edit_html_erb___718458041__663575808'
+app/views/sections/edit.html.erb:6:in `_app_views_sections_edit_html_erb___718458041__663575808'
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass
+Did you mean?  tap):
+     7: 	</tr>
+     8: 	<tr>
+     9: 		<th>Page</th>
+    10: 		<td><%= f.select(:page_id, @pages.map {|p| [p.name, p.id] }) %></td>
+    11: 	</tr>
+    12: 	<tr>
+    13: 		<td>Position</td>
+  
+app/views/sections/_form.html.erb:10:in `_app_views_sections__form_html_erb__846122531__634659708'
+app/views/sections/edit.html.erb:8:in `block in _app_views_sections_edit_html_erb___718458041__634576708'
+app/views/sections/edit.html.erb:6:in `_app_views_sections_edit_html_erb___718458041__634576708'
+  
+NameError (uninitialized constant SectionsController::Pages):
+  
+app/controllers/sections_controller.rb:34:in `edit'
+  
+NameError (uninitialized constant SectionsController::Pages):
+  
+app/controllers/sections_controller.rb:34:in `edit'
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    20: 		<td><%= status_tag(section.visible) %></td>
+    21: 		<td><%= section.content_type %></td>
+    22: 		<td><%= section.content %></td>
+    23: 		<td><%= section.page.id %></td>
+    24: 
+    25: 		<td>
+    26: 			<%= link_to("Show", section_path(section))%>
+  
+app/views/sections/index.html.erb:23:in `block in _app_views_sections_index_html_erb__358058053__639616758'
+app/views/sections/index.html.erb:16:in `_app_views_sections_index_html_erb__358058053__639616758'
+  
+SyntaxError (/home/dev8/Sites/simple_cms/app/views/layouts/_navigation.html.erb:1: syntax error, unexpected '='
+...OutputBuffer.new; subjects || = [] 
+...                               ^):
+  
+app/views/layouts/_navigation.html.erb:1: syntax error, unexpected '='
+app/views/layouts/public.html.erb:14:in `_app_views_layouts_public_html_erb__766445496__634451428'
+  
+SyntaxError (/home/dev8/Sites/simple_cms/app/views/layouts/_navigation.html.erb:1: syntax error, unexpected '='
+...OutputBuffer.new; subjects || = [] 
+...                               ^):
+  
+app/views/layouts/_navigation.html.erb:1: syntax error, unexpected '='
+app/views/layouts/public.html.erb:14:in `_app_views_layouts_public_html_erb__766445496__660980108'
+  
+ActionView::Template::Error (undefined local variable or method `page' for #<#<Class:0xafc4a52c>:0xb35e3568>
+Did you mean?  pages
+               @page):
+     6: 		<%= subject.name %>
+     7: 		<ul>
+     8: 			<% subject.pages.visible.sorted.each do |pages| %>
+     9: 				<li><%= link_to_unless_current(public_path(page.permalink))%></li>
+    10: 			<% end %>
+    11: 		</ul>
+    12: 	</li>
+  
+app/views/layouts/_navigation.html.erb:9:in `block (2 levels) in _app_views_layouts__navigation_html_erb__454115883__641840908'
+app/views/layouts/_navigation.html.erb:8:in `block in _app_views_layouts__navigation_html_erb__454115883__641840908'
+app/views/layouts/_navigation.html.erb:4:in `_app_views_layouts__navigation_html_erb__454115883__641840908'
+app/views/layouts/public.html.erb:14:in `_app_views_layouts_public_html_erb__766445496__642840018'
+  
+ActionView::Template::Error (undefined method `public_path' for #<#<Class:0xafc4a52c>:0xb10eaa2c>
+Did you mean?  public_index_path):
+     6: 		<%= subject.name %>
+     7: 		<ul>
+     8: 			<% subject.pages.visible.sorted.each do |page| %>
+     9: 				<li><%= link_to_unless_current(public_path(page.permalink))%></li>
+    10: 			<% end %>
+    11: 		</ul>
+    12: 	</li>
+  
+app/views/layouts/_navigation.html.erb:9:in `block (2 levels) in _app_views_layouts__navigation_html_erb__454115883__645559398'
+app/views/layouts/_navigation.html.erb:8:in `block in _app_views_layouts__navigation_html_erb__454115883__645559398'
+app/views/layouts/_navigation.html.erb:4:in `_app_views_layouts__navigation_html_erb__454115883__645559398'
+app/views/layouts/public.html.erb:14:in `_app_views_layouts_public_html_erb__766445496__662222208'
+  
+ActionView::Template::Error (undefined method `show_public_path' for #<#<Class:0xafc4a52c>:0x9a3b7f0>
+Did you mean?  public_show_path):
+     6: 		<%= subject.name %>
+     7: 		<ul>
+     8: 			<% subject.pages.visible.sorted.each do |page| %>
+     9: 				<li><%= link_to_unless_current(show_public_path(page.permalink))%></li>
+    10: 			<% end %>
+    11: 		</ul>
+    12: 	</li>
+  
+app/views/layouts/_navigation.html.erb:9:in `block (2 levels) in _app_views_layouts__navigation_html_erb__454115883_90077670'
+app/views/layouts/_navigation.html.erb:8:in `block in _app_views_layouts__navigation_html_erb__454115883_90077670'
+app/views/layouts/_navigation.html.erb:4:in `_app_views_layouts__navigation_html_erb__454115883_90077670'
+app/views/layouts/public.html.erb:14:in `_app_views_layouts_public_html_erb__766445496_80727430'
+  
+ActionController::RoutingError (No route matches [GET] "/subject"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+NoMethodError (undefined method `sorted' for #<Page:0xac64774>):
+  
+app/controllers/sections_controller.rb:10:in `index'
+  
+NoMethodError (undefined method `first' for #<Page:0xb30c24bc>):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+ActiveRecord::RecordNotFound (Couldn't find Subject with 'id'=):
+  
+app/controllers/pages_controller.rb:67:in `find_subject'
+  
+ActiveRecord::RecordNotFound (Couldn't find Subject with 'id'=):
+  
+app/controllers/pages_controller.rb:67:in `find_subject'
+  
+ActiveRecord::RecordNotFound (Couldn't find Subject with 'id'=):
+  
+app/controllers/pages_controller.rb:67:in `find_subject'
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <%= link_to("<< Back to pages", admin_path(:subject_id => @subject.id)) %>
+    2: <h1>Sections</h1>
+    3: 
+    4: <%= link_to("Add new section", new_section_path(:page_id => @page.id)) %>
+  
+app/views/sections/index.html.erb:1:in `_app_views_sections_index_html_erb__358058053_89166410'
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"subjects", :subject_id=>2} missing required keys: [:id]):
+    1: <%= link_to("<< Back to pages", subject_path(:subject_id => @page.subject.id)) %>
+    2: <h1>Sections</h1>
+    3: 
+    4: <%= link_to("Add new section", new_section_path(:page_id => @page.id)) %>
+  
+app/views/sections/index.html.erb:1:in `_app_views_sections_index_html_erb__358058053__634429828'
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+ActiveRecord::RecordNotFound (Couldn't find Subject with 'id'=):
+  
+app/controllers/pages_controller.rb:67:in `find_subject'
+  
+ActiveRecord::RecordNotFound (Couldn't find Subject with 'id'=):
+  
+app/controllers/pages_controller.rb:67:in `find_subject'
+  
+ActiveRecord::RecordNotFound (Couldn't find Subject with 'id'=):
+  
+app/controllers/pages_controller.rb:67:in `find_subject'
+  
+ActiveRecord::RecordNotFound (Couldn't find Subject with 'id'=4):
+  
+app/controllers/pages_controller.rb:67:in `find_subject'
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+SyntaxError (/home/dev8/Sites/simple_cms/app/views/sections/new.html.erb:6: syntax error, unexpected '=', expecting ')'
+...url => sections_path(:page_id = @page.id)) do |f| @output_bu...
+...                               ^
+/home/dev8/Sites/simple_cms/app/views/sections/new.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+...tions_path(:page_id = @page.id)) do |f| @output_buffer.safe_...
+...                               ^
+/home/dev8/Sites/simple_cms/app/views/sections/new.html.erb:14: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/sections/new.html.erb:6: syntax error, unexpected '=', expecting ')'
+app/views/sections/new.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+app/views/sections/new.html.erb:14: syntax error, unexpected keyword_ensure, expecting end-of-input
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=):
+  
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+     8: 	</tr>
+     9: 	<tr>
+    10: 		<td>Subject id</td>
+    11: 		<td><%= @page.subject.id %></td>
+    12: 	</tr>
+    13: 	<tr>
+    14: 		<td>Permalink</td>
+  
+app/views/pages/show.html.erb:11:in `_app_views_pages_show_html_erb__753707715__645423348'
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     9: 		<td>Subject</td>
+    10: 		<td>
+    11: 			<!-- <%= f.select(:subject_id, @subjects.map {|s| [s.name, s.id] }) %> -->
+    12: 			<%= f.object.subject.name %>
+    13: 		</td>
+    14: 	</tr>
+    15: 	<tr>
+  
+app/views/pages/_form.html.erb:12:in `_app_views_pages__form_html_erb__8695016__641719598'
+app/views/pages/new.html.erb:6:in `block in _app_views_pages_new_html_erb__638287426__641619488'
+app/views/pages/new.html.erb:5:in `_app_views_pages_new_html_erb__638287426__641619488'
+app/controllers/pages_controller.rb:29:in `create'
+  
+NoMethodError (undefined method `find_subject' for #<PagesController:0xb390447c>):
+  
+activesupport (5.0.2) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.2) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.2) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass
+Did you mean?  tap):
+     8: 	<tr>
+     9: 		<td>Subject</td>
+    10: 		<td>
+    11: 			<!-- <%= f.select(:subject_id, @subjects.map {|s| [s.name, s.id] }) %> -->
+    12: 			<%= f.object.subject.name %>
+    13: 		</td>
+    14: 	</tr>
+  
+app/views/pages/_form.html.erb:11:in `_app_views_pages__form_html_erb__8695016_89624140'
+app/views/pages/edit.html.erb:5:in `block in _app_views_pages_edit_html_erb__459344343_89357790'
+app/views/pages/edit.html.erb:4:in `_app_views_pages_edit_html_erb__459344343_89357790'
+  
+ActionController::RoutingError (No route matches [PATCH] "/sections"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [PATCH] "/sections"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [PATCH] "/sections"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [PATCH] "/sections"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"sections", :id=>#<Section id: nil, page_id: 4, name: nil, position: nil, visible: false, content_type: nil, content: nil, created_at: nil, updated_at: nil>, :page_id=>4} missing required keys: [:id]):
+    3: <div class="sections new">
+    4: 	<h2>Create Section</h2>
+    5: 
+    6: 	<%= form_for(@section, :url => section_path(@section, :page_id => @page.id)) do |f| %>
+    7: 		<%= render(:partial => 'form', :locals => {:f => f})%>
+    8: 		<div class="form-buttons">
+    9: 			<%= f.submit("Create Section") %>
+  
+app/views/sections/new.html.erb:6:in `_app_views_sections_new_html_erb__232266777__644338878'
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: <div class="subjects edit">
+    4: 	<h2>Edit Subject</h2>
+    5: 
+    6: 	<%= form_for(@subject) do |f| %>
+    7: 		
+    8: 		<%= render(:partial => 'form', :locals => {:f => f} )%>
+    9: 		
+  
+app/views/subjects/edit.html.erb:6:in `_app_views_subjects_edit_html_erb__484399449__638789958'
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: <div class="subjects edit">
+    4: 	<h2>Edit Subject</h2>
+    5: 
+    6: 	<%= form_for(@subject) do |f| %>
+    7: 		
+    8: 		<%= render(:partial => 'form', :locals => {:f => f} )%>
+    9: 		
+  
+app/views/subjects/edit.html.erb:6:in `_app_views_subjects_edit_html_erb__484399449__625363038'
+  
+NoMethodError (undefined method `acts_as_list' for #<Class:0xb26ac680>
+Did you mean?  acts_like?):
+  
+app/models/page.rb:3:in `<class:Page>'
+app/models/page.rb:1:in `<top (required)>'
+app/controllers/sections_controller.rb:70:in `find_page'
+  
+NameError (undefined local variable or method `acts_as_list' for #<Class:0xb2a73160>
+Did you mean?  acts_like?):
+  
+app/models/subject.rb:3:in `<class:Subject>'
+app/models/subject.rb:1:in `<top (required)>'
+app/controllers/subjects_controller.rb:9:in `index'
+  
+ActionView::Template::Error (couldn't find file 'normalize-rails' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__68333527_87619320'
+  
+ActionView::Template::Error (couldn't find file 'normalize-scss' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__68333527__637816708'
+  
+ActionView::Template::Error (couldn't find file 'normalize-scss' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034_89445140'
+  
+ActionView::Template::Error (couldn't find file 'normalize' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__638810808'
+  
+ActionView::Template::Error (couldn't find file 'normaliz-sass' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__641649348'
+  
+ActionView::Template::Error (couldn't find file 'normaliz-scss' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__640281238'
+  
+ActionView::Template::Error (couldn't find file 'normalize-scss' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__637691148'
+  
+ActionView::Template::Error (couldn't find file 'normalize-scss' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__636751838'
+  
+ActionView::Template::Error (couldn't find file 'normalize' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034_81949040'
+  
+ActionView::Template::Error (couldn't find file 'normalize' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__645128118'
+  
+ActionView::Template::Error (couldn't find file 'normalize' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__642820588'
+  
+ActionView::Template::Error (couldn't find file 'normalize-scss' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__646867918'
+  
+ActionView::Template::Error (couldn't find file 'normalize-css' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__645061728'
+  
+ActionView::Template::Error (couldn't find file 'normalize-scss' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__645151628'
+  
+ActionView::Template::Error (couldn't find file 'normalize-scss-6.0.0' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__645829538'
+  
+ActionView::Template::Error (couldn't find file 'normalize-scss' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__645651898'
+  
+ActionView::Template::Error (couldn't find file 'normalize-scss' with type 'text/css'
+Checked in these paths: 
+  /home/dev8/Sites/simple_cms/app/assets/config
+  /home/dev8/Sites/simple_cms/app/assets/images
+  /home/dev8/Sites/simple_cms/app/assets/javascripts
+  /home/dev8/Sites/simple_cms/app/assets/stylesheets
+  /home/dev8/Sites/simple_cms/vendor/assets/javascripts
+  /home/dev8/Sites/simple_cms/vendor/assets/stylesheets
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/actioncable-5.0.2/lib/assets/compiled
+  /home/dev8/.rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    2: <html>
+    3:   <head>
+    4:     <title>Simple CMS: <%= "| #{@page_title}" if @page_title %></title>
+    5:     <%= stylesheet_link_tag('application', :media => 'all') %>
+    6:   </head>
+    7: 
+    8:   <body>
+  
+app/assets/stylesheets/admin.css:14
+app/views/layouts/public.html.erb:5:in `_app_views_layouts_public_html_erb__352089034__642296348'
